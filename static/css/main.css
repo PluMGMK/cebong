@@ -19,7 +19,8 @@
 body {
     background: #FDF6E3;
     color: #8A887B;
-    font-size: 16px;
+    /*font-size: 16px;*/
+	font-size: 22px;
     font-family: 'Crimson Text', 'Trebuchet MS', Trebuchet, 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     /*line-height: 1.429;*/
     margin: 0;
@@ -164,7 +165,7 @@ aside, nav, article, figure {
 }
 
 /***** Layout *****/
-.body {clear: both; margin: 0 auto; width: 800px;}
+.body {clear: both; margin: 0 auto; width: /*800px*/ 1000px;} /* phone screens typically 1080px, PC screens at least 1024px these days! */
 img.right, figure.right {float: right; margin: 0 0 2em 2em;}
 img.left, figure.left {float: left; margin: 0 2em 2em 0;}
 
@@ -203,7 +204,8 @@ img.left, figure.left {float: left; margin: 0 2em 2em 0;}
 		/*margin: 0 auto 2em auto;*/
 		padding: 0;
 		text-align: center;
-		width: 800px;
+		/* phone screens typically 1080px, PC screens at least 1024px these days! */
+		width: /*800px*/ 1000px;
         font-style:italic;
 		
 		border-radius: 5px;
@@ -211,7 +213,7 @@ img.left, figure.left {float: left; margin: 0 2em 2em 0;}
 		-webkit-border-radius: 5px;
 	}
 	
-	#banner nav ul {list-style: none; margin: 0 auto; width: 800px;}
+	#banner nav ul {list-style: none; margin: 0 auto; width: /*800px*/ 1000px;}
 	#banner nav li {float: left; display: inline; margin: 0;}
 	
 	#banner nav a:link, #banner nav a:visited {
@@ -276,7 +278,7 @@ img.left, figure.left {float: left; margin: 0 2em 2em 0;}
 	margin-bottom: 2em;
 	overflow: hidden;
 	padding: 20px 20px;
-	width: 760px;
+	width: /*760px*/ 960px;
 	
 	border-radius: 10px;
 	-moz-border-radius: 10px;
@@ -382,6 +384,11 @@ li:last-child .hentry, #content > .hentry {border: 0; margin: 0;}
 .entry-title {text-align:center;font-size: 31px; font-style:italic; margin-bottom: 10px; margin-top: 0;}
 .entry-title a:link, .entry-title a:visited {text-decoration: none; color: #8A887B;}
 .entry-title a:visited {background-color: #fff;}
+
+/* Make figures align correctly */
+.align-left{text-align:left;}
+.align-center{text-align:center;}
+.align-right{text-align:right;}
 
 .hentry .post-info * {font-style: normal;}
 
